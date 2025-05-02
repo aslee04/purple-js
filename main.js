@@ -92,14 +92,29 @@ console.log(message)
 
 const user = prompt('Сколько будет 7 + или - 15?')
 
-switch (true) {
-    case user > 0:
-        console.log('Viy ne robot:' + ' Uspex')
-        break
-    case user < 0:
-        console.log('Viy robot:' + ' Ne uspex')
-        break
-    default:
-        console.log('viy nekto')
-        break
+// switch (true) {
+//     case user === 'Viy ne robot':
+//     case Number(user) === 22:
+//     case Number(user) === -8:
+//         console.log('Uspex')
+//         break
+//     default:
+//         console.log('Viy robot');
+// }
+
+if (user === 'Ya ne robot') {
+    console.log('Viy ne robot')
+} else {
+    const userNum = Number(user)
+    switch(userNum) {
+        case 22:
+        case -8:
+            console.log('Uspex')
+            break
+        default:
+            console.log('Viy robot')
+    }
 }
+
+const balance = 1000
+const bonusBalance = 100
