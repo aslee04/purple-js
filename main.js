@@ -24,9 +24,9 @@ if (money >= 60) {
 
 console.log(`uni balansi: ${money}$`)
 
-const myCash = 100
-const procent = 0.07
-const result = myCash * (1 + procent / 12) ** 24
+const myCash = 1200
+const percent = 0.07
+const result = myCash * (1 + percent / 12) ** 24
 const house = 13500
 
 if (result >= house) {
